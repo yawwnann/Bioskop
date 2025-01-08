@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 06 Jan 2025 pada 00.29
+-- Waktu pembuatan: 08 Jan 2025 pada 14.49
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.0.30
 
@@ -151,7 +151,8 @@ INSERT INTO `tiket` (`id_tiket`, `id_user`, `id_film`, `kursi`, `total_bayar`, `
 (1, 6, 1002356803, 'C3', 50000, '2025-01-06 06:26:07'),
 (2, 6, 1002356803, 'C1', 50000, '2025-01-06 06:27:03'),
 (3, 6, 1002356803, 'E1', 50000, '2025-01-06 06:29:42'),
-(4, 6, 1002356802, 'C1', 50000, '2025-01-06 07:24:05');
+(4, 6, 1002356802, 'C1', 50000, '2025-01-06 07:24:05'),
+(5, 6, 1002356802, 'C4', 50000, '2025-01-08 20:11:56');
 
 -- --------------------------------------------------------
 
@@ -174,8 +175,10 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id_user`, `nama`, `no_kontak`, `email`, `username`, `password`, `level`) VALUES
-(6, 'anjay', '0812345634567', 'anjay@gmail.com', 'anjay', '12345678', 'customer'),
-(7, 'admin', '0845676434567', 'admin@gmail.com', 'admin', '12345678', 'admin');
+(6, 'anjay', '0812345612111', 'anjay@gmail.com', 'anjay', 'ujangujang', 'customer'),
+(7, 'admin', '0845676434567', 'admin@gmail.com', 'admin', '12345678', 'admin'),
+(9, 'kucing', '08234567654', 'kucing@gmail.com', 'kucing', '12345678', 'customer'),
+(10, 'nanang', '0846361762311', 'nanang@gmail.com', 'nanang', '12345678', 'customer');
 
 --
 -- Indexes for dumped tables
@@ -248,13 +251,13 @@ ALTER TABLE `studio`
 -- AUTO_INCREMENT untuk tabel `tiket`
 --
 ALTER TABLE `tiket`
-  MODIFY `id_tiket` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_tiket` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT untuk tabel `user`
 --
 ALTER TABLE `user`
-  MODIFY `id_user` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_user` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
