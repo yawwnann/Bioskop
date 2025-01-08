@@ -1,0 +1,153 @@
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'left right';
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.header {
+	grid-area: header;
+	width: 100%;
+	height: 500px;
+	border-bottom: 2px solid #888888;
+	margin-bottom: 100px;
+}
+
+h2, h3 {
+	line-height: 0.5em;
+}
+
+.left {
+	grid-area: left;
+	width: 400px;
+	min-height: 200px;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: center;
+}
+
+.full-seat {
+  border: 1.5px solid #888888;
+  border-radius: 2px;
+  margin: 5px;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 30px;
+  color: #888888;
+  background-color: #cccccc;
+}
+
+.empty-seat {
+  border: 1.5px solid #00C4EA;
+  border-radius: 2px;
+  margin: 5px;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 30px;
+
+}
+
+.right {
+	grid-area: right;
+	width: 400px;
+	min-height: 200px;
+	border-left: 1px solid #888888;
+	padding-left: 50px;
+}
+
+#judul, #jadwal {
+	color: white;
+}
+
+#no-seat {
+	display: none;
+} 
+
+.screen {
+	width: 100%;
+	background-color: #888888;
+	color: white;
+	border: none;
+	padding: 7px 20px;
+	margin-top: 10px;
+}
+
+#back a {
+	font-size: 75px;
+	font-color: #00C4EA;
+	height: 100%;
+	width: 40px;
+	float: left;
+	text-decoration: none;
+}
+
+#back a:link, #back a:visited, #back a:hover, #back a:active {
+  text-decoration: none; 
+  color: #00C4EA;
+}
+
+#buy-ticket-button {
+	float: right;
+	background-color: #00C4EA;
+	color: white;
+	border: none;
+	padding: 7px 20px;
+	border-radius: 5px;
+	display: none;
+}
+
+#modal_box {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+#modal_content {
+  background-color: #fefefe;
+  margin: 200px 430px;
+  padding: 30px;
+  border: 1px solid #888;
+  width: 27.5%;
+  height: 40%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#modal_content > h2, p {
+	line-height: 1.5em;
+}
+
+#go-to-transaction {
+	background-color: #00C4EA;
+	color: white;
+	border: none;
+	padding: 7px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
