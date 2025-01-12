@@ -1,42 +1,20 @@
-# Website Bioskop
+# Website Bioskop 🎬
 
-Website ini adalah aplikasi sederhana untuk menampilkan daftar film dan memesan tiket bioskop. Proyek ini menggunakan SQL sebagai basis data dan Tailwind CSS untuk styling.
+Aplikasi sederhana untuk menampilkan daftar film dan memesan tiket bioskop. Proyek ini menggunakan **SQL** sebagai basis data dan **Tailwind CSS** untuk tampilan.
 
-## Fitur Utama
-- Menampilkan daftar film yang sedang tayang.
-- Menampilkan jadwal penayangan film.
-- Pemesanan tiket secara online.
+## ✨ Fitur Utama
+- **Daftar Film**: Menampilkan film yang sedang tayang.
+- **Jadwal Penayangan**: Informasi waktu tayang film.
+- **Pemesanan Tiket**: Memesan tiket secara online dengan mudah.
 
-## Teknologi yang Digunakan
-- **Backend**: SQL untuk database.
-- **Frontend**: HTML, JavaScript, dan Tailwind CSS untuk styling.
+## 🛠️ Teknologi yang Digunakan
+- **Backend**: SQL sebagai basis data.
+- **Frontend**: HTML, JavaScript, dan Tailwind CSS untuk desain responsif.
 
-## Cara Instalasi
-1. Clone repositori ini:
+## 🚀 Cara Instalasi
+Ikuti langkah-langkah berikut untuk menjalankan proyek ini di mesin lokal Anda:
+
+1. **Clone repositori**:
    ```bash
    git clone https://github.com/yawwnann/website-bioskop.git
    cd website-bioskop
-   ```
-2. Instal dependensi (jika menggunakan framework tertentu):
-   ```bash
-   npm install
-   ```
-3. Konfigurasi database:
-   - Buat database baru di server database Anda.
-   - Tambahkan detail koneksi database di file konfigurasi.
-4. Jalankan aplikasi:
-   ```bash
-   npm start
-   ```
-5. Buka browser dan akses:
-   ```
-   http://localhost:3000
-   ```
-
-## Struktur Database
-- **Movies**: Menyimpan informasi film.
-- **Schedules**: Menyimpan jadwal penayangan.
-- **Tickets**: Menyimpan data pemesanan tiket.
-
-## Lisensi
-Proyek ini dilisensikan di bawah [MIT License](LICENSE).
